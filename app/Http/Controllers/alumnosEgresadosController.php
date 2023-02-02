@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\alumnos_egresados;
+use App\Models\alumnos_egresados;
 
 class alumnosEgresadosController extends Controller
 {
