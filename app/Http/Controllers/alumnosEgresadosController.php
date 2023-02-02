@@ -16,8 +16,8 @@ class alumnosEgresadosController extends Controller
         if(empty($alumno)){
             return response()->json(['Mensaje'=>'Registro no encontrado'],404);
         }
-        else{
-        return response()->json($alumno,200);
-        }
+        
+        return response()->json($alumno::find($id),200);
+    
     }
 }

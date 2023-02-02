@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('alumnos_egresados', 'App\Http\Controllers\alumnosEgresadosController@getAlumnosEgresados');
+Route::get('alumno_egresado/{id}', 'App\Http\Controllers\alumnosEgresadosController@getAlumnoEgresado');
