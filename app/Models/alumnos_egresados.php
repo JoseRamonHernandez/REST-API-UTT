@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class alumnos_egresados extends Model
 {
-    use HasFactory;
+    public $timestamps = false;
+    protected $fillable = ['id', 'name', 'lastname', 'email', 'password', 'specialty', 'generation', 'dateOfBirthday', 'phoneNumber'];
 }
